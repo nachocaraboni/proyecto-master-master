@@ -8,7 +8,7 @@ export const ItemDetail = ({item}) => {
 
     console.log(item)
     return(
-        <div className="bg-light m-0">
+        <div className="bg-light m-0 mt-3">
            <h1>{nombre}</h1>
             <h3>{marca}</h3>
             <div className="container mt-4">

@@ -3,58 +3,58 @@ import { Link } from "react-router-dom";
 import { CarrContext } from "../Carrito";
 import { Css } from "./index";
 import styles from "./Navbar.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export const Pages = () => {
+  const { cartCount } = useContext(CarrContext);
+  const menu = [
+    "Inicio",
+    "Productos",
+    "Promociones",
+    "Nosotros",
+    "Perfil",
+    "Carrito",
+    "Contacto",
+  ];
+  // const {ul} = Css
+  const [active, setActive] = useState(window.location.pathname);
 
+  function activeLink(item) {
+    const rutaActual = `/${item.toLowerCase()}`;
+    return active === rutaActual ? `fw-bold text-white ${styles.activo}` : null;
+  }
 
-    const {cartCount} = useContext(CarrContext)
-    const menu = ["Inicio","Productos","Promociones","Nosotros", "Perfil","Carrito", "Contacto"];
-    // const {ul} = Css
-    const [active, setActive]=useState(window.location.pathname)
+  function handleClick(item) {
+    const rutaActual = `/${item.toLowerCase()}`;
+    setActive(rutaActual);
+  }
 
-    function activeLink(item){
-        const rutaActual =`/${item.toLowerCase()}`
-        return active === rutaActual
-        ? `fw-bold text-white ${styles.activo}`
-        : null
-    }
-
-    function handleClick(item){
-        const rutaActual =`/${item.toLowerCase()}`
-        setActive(rutaActual)
-    }
-
-    return(
-        <div className="navbar-nav">
-
-        {cartCount>0 
-            && 
-            <Link 
-                to='carrito'
-                className="btn btn-light rounded-pill fs-6 fw-bold me-3"
-            >
-            <FontAwesomeIcon className="mx-2" icon={faCartShopping} /> 
-            {cartCount}
-            </Link>            
-            }
-              {menu.map((opcion) => (
-                
-                  <Link
-                    key={opcion}
-                    className={`nav-link ${activeLink(opcion)} ${styles.navLink}`}
-                    to={opcion.toLowerCase()}
-                    onClick={() => handleClick(opcion)}
-                  >
-                    {opcion}
-                  </Link>
-                
-              ))}
-              
-            </div>
-    )
-        {/* <ul className={ul}>
+  return (
+    <div className="navbar-nav">
+      {menu.map((opcion) => (
+        <Link
+          key={opcion}
+          className={`nav-link ${activeLink(opcion)} ${styles.navLink}`}
+          to={opcion.toLowerCase()}
+          onClick={() => handleClick(opcion)}
+        >
+          {opcion}
+        </Link>
+      ))}
+      {cartCount > 0 && (
+        <Link
+          to="carrito"
+          className="btn btn-light rounded-pill fs-6 fw-bold me-3 mx-5 py-2 carrito"
+        >
+          <FontAwesomeIcon className="mx-2 carrito" icon={faCartShopping} />
+          {cartCount}
+        </Link>
+      )}
+    </div>
+  );
+  {
+    /* <ul className={ul}>
 
             {cartCount>0 
             && 
@@ -77,10 +77,9 @@ export const Pages = () => {
                 </Link>
            )}
         </ul>)
- */}
-
-    
-}
+ */
+  }
+};
 
 /*    const menu = ["Inicio","Promociones","Nosotros","Contacto"];
     const {cartcount}=useCarContext
@@ -105,7 +104,7 @@ export const Pages = () => {
            {menu.map(item =>
            <Link
            key={item}
-           className ={li} /*ver si el css lo pongo aca*/ 
+           className ={li} /*ver si el css lo pongo aca*/
 /*           to={item.toLowerCase()}
            onClick = {() => handleClick(item)}>
            {item}

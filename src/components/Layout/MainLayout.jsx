@@ -4,7 +4,7 @@ export const MainLayout =({children}) =>{
 
     return(
         <div 
-            className={`container-fluid d-flex justify-content-center bg-light m-0 mt-5 pt-3 ${styles.fondo} ${styles.scroll}`}
+            className={`container-fluid d-flex justify-content-center bg-light m-0 mt-5 pt-3 px-0 ${styles.fondo} ${styles.scroll}`}
               
         >
             {children}
