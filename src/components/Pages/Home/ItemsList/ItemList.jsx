@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { FiltrarBar } from "./FiltrarBar";
 import { Item } from "./Item";
 
-export const ItemList = ({ datos }) => {
+export const ItemList = ({ productos }) => {
 
 
   const [filtro, setFiltro] = useState("");
-  const datosFiltrados = filtro ? filtrarDatos() : datos;
+  const datosFiltrados = filtro ? filtrarDatos() : productos;
   console.log(datosFiltrados);
 
   function filtrarDatos() {
-    return datos.filter((dato) => dato.categoria === filtro);
+    return productos.filter((dato) => dato.categoria === filtro);
   }
 
 

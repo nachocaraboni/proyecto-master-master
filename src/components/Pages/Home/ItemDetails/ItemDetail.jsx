@@ -14,7 +14,7 @@ export const ItemDetail = ({item}) => {
             <div className="container mt-4">
                 <div className="row">
                     <div className="col">
-                        <img src={imagen} alt={nombre}/>
+                        <img src={imagen} alt={nombre} className={``}/>
                     </div>
                     <div className="col align-self-center">
                         <div className="text-start">

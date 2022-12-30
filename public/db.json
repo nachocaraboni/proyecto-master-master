@@ -1,4 +1,39 @@
-[
+[ {
+  "id":"7",
+  "nombre":"Caramelos, Chicles, Chupetines",
+  "descripcion":"",
+  "marca":"",
+  "imagen":"https://res.cloudinary.com/leti-prueba/image/upload/v1669042574/golosinas/g7ltoukvm5tgcl9fisrb.jpg",
+  "precio":"",
+  "categoria": "",
+  "destacado": true,
+  "descDestacado":"Variedad de marcas y presentaciones"
+ },
+ {
+  "id":"3",
+  "nombre":"Chocolates y alfajores",
+  "descripcion":"",
+  "marca":"",
+  "imagen":"https://res.cloudinary.com/leti-prueba/image/upload/v1669047225/golosinas/ruyayyjscmgwwubblxot.webp",
+  "precio":"",
+  "categoria": "Chocolate",
+  "destacado": true,
+  "descDestacado":"Variedad de marcas. Venta por paquete y por kilo"
+ },
+
+ {
+  "id":"6",
+  "nombre":"Gomitas sueltas",
+  "descripcion":"Pack de gomitas surtidas x peso ",
+  "marca":"Genérico",
+  "imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Fale_-_Barcellona_-_194.jpg/1024px-Fale_-_Barcellona_-_194.jpg",
+  "precio":"130",
+  "categoria": "Caramelos y gomitas",
+  "destacado": true,
+  "descDestacado":"Tenemos amplia variedad de gomitas en distintas formas y tamaños. Te preparamos un surtido x peso"
+ },
+
+
    {
     "id":"2",
     "nombre":"Caramelos Sugus",
@@ -10,28 +45,8 @@
     "destacado": false,
     "descDestacado":""
    },
-        {
-      "id":"7",
-      "nombre":"Chicles Beldent",
-      "descripcion":"Goma de mascar sabor tutti frutti",
-      "marca":"Beldent",
-      "imagen":"https://res.cloudinary.com/leti-prueba/image/upload/v1669042574/golosinas/g7ltoukvm5tgcl9fisrb.jpg",
-      "precio":"120",
-      "categoria": "Chicles",
-      "destacado": true,
-      "descDestacado":"Nuevos sabores"
-     },
-   {
-    "id":"3",
-    "nombre":"Chocolate Aguila",
-    "descripcion":"Barra de chocolate con leche",
-    "marca":"Aguila",
-    "imagen":"https://res.cloudinary.com/leti-prueba/image/upload/v1669047225/golosinas/ruyayyjscmgwwubblxot.webp",
-    "precio":"300",
-    "categoria": "Chocolate",
-    "destacado": true,
-    "descDestacado":"Oferta especial por la semana de mayo(¿?)"
-   },
+
+
    {
     "id":"4",
     "nombre":"Gomitas Mogul",
@@ -55,17 +70,7 @@
     "descDestacado":""
    },
 
-   {
-      "id":"6",
-      "nombre":"Gomitas sueltas",
-      "descripcion":"Pack de gomitas surtidas x peso ",
-      "marca":"Genérico",
-      "imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Fale_-_Barcellona_-_194.jpg/1024px-Fale_-_Barcellona_-_194.jpg",
-      "precio":"130",
-      "categoria": "Caramelos y gomitas",
-      "destacado": true,
-      "descDestacado":"Tenemos amplia variedad de gomitas en distintas formas y tamaños. Te preparamos un surtido x peso"
-     },
+
 
 
      {
