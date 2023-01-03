@@ -1,5 +1,5 @@
 
-import { useCustom } from "../../hooks"
+import { useCustom } from "../../../hooks"
 
 export const Custom = ()=> {
     

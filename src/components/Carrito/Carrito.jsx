@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import { Link } from "react-router-dom"
 import { CarrContext } from "./CarrContext"
 
 export const Carrito =()=>{
@@ -38,7 +39,12 @@ export const Carrito =()=>{
 
             </div>)}
 
+            <Link
+                to='metododepago'
+            >
+
             <button className="shadow fw-bold fs-5 w-100 btn btn-warning"> Pagar </button>
+            </Link>
 
         </div>     
 
