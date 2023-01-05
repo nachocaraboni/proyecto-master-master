@@ -18,8 +18,9 @@ export const Router = () =>{
 
     <LoginLayout>
         <Routes>
-                <Route path='/' element={<ItemListContainer />} />
-                <Route path='/*' element={<ItemListContainer />}/>
+                <Route path='/' element={<CarrouselContainer />} />
+                <Route path='/*' element={<CarrouselContainer />}/>
+                <Route path='/productos' element={<ItemListContainer />}/>
                 <Route path='/inicio' element={<CarrouselContainer />} />
                 <Route path='/promociones' element={<Promociones />}/>
                 <Route path='/perfil' element={<Perfil />}/>

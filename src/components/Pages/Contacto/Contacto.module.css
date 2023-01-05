@@ -1,0 +1,8 @@
+.fondoNaranja{
+    background: var(--color-bordo) !important; 
+    width: 75%;
+    height: fit-content;
+    border: solid;
+    border-radius: 3%;
+    border-left: solid 5px saddlebrown;
+}

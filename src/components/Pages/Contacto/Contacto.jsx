@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./Contacto.module.css"
 
 export const Contacto = () => {
   const initialState = { nombre: "", email: "", texto: "" };
@@ -16,12 +17,12 @@ export const Contacto = () => {
   };
 
   return (
-    <div className="container-fluid mx-auto mt-5 pt-5 text-white">
+    <div className= {`container-fluid mx-auto mt-3 pt-3 pe-5 text-white  ${styles.fondoNaranja}`}>
       <h2 >Dejanos tu consulta</h2>
 
-      <form name="formulario" className="my-5 w-75 m-auto">
+      <form name="formulario" className="my-5  m-auto">
         <div className="mb-3 row">
-          <label className="col-sm-2 col-form-label text-start">Nombre</label>
+          <label className="col-sm-2 col-form-label text-end">Nombre</label>
           <div className="col-sm-10">
             <input
               name="nombre"
@@ -35,7 +36,7 @@ export const Contacto = () => {
         </div>
 
         <div className="mb-3 row">
-          <label className="col-sm-2 col-form-label text-start">Email</label>
+          <label className="col-sm-2 col-form-label text-end">Email</label>
           <div className="col-sm-10">
             <input
               name="email"
@@ -49,7 +50,7 @@ export const Contacto = () => {
         </div>
 
         <div className="mb-3 row">
-          <label className="col-sm-2 col-form-label text-start">Mensaje</label>
+          <label className="col-sm-2 col-form-label text-end">Mensaje</label>
           <div className="col-sm-10">
             <textarea
               name="texto"
@@ -61,7 +62,7 @@ export const Contacto = () => {
             />
           </div>
         </div>
-        <button className="btn btn-primary my-3 w-30" onClick={handleClick}>
+        <button className="btn btn-warning my-3 w-30" onClick={handleClick}>
           Enviar
         </button>
       </form>

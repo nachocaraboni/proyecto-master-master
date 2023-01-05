@@ -26,9 +26,18 @@ code {
 :root {
   --color-verde: rgb(24, 123, 13);
   --color-amarillo: #fff764;
-  --color-bordoOriginal: #7e084d;
+  --color-bordo: #7e084d;
   --color-rojo: #d8012b;;
   --color-naranja: #fb7c36;
-  --color-bordo: #ee43a7;
+  --color-chicle: #ee43a7;
+  --color-1:  #b5ac01 ;
+  --color2: #ecba09 ;
+  --color-bordo: #e86e1c ;
+  --color4:#d41e45 ;
+  --color5: #1b1521 ;
 
 }
+
+body{
+  overflow-y:hidden;
+  max-height: 80vh;}

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { commonLogin, signInWithGoogle } from "../../firebase/providers/providers";
 import { LoginContext } from "./LoginContext";
 import { Register } from "./Register";
+import styles from "./Login.module.css"
 
 
 export const Login =()=>{
@@ -41,8 +42,8 @@ export const Login =()=>{
         //handleInputChange={handleInputChange}
     />
     : (
-        <form name='login'>
-            <h1 className="my-5">Login</h1>
+        <form name='login' className= {`mt-3 px-5 pb-4 ${styles.fondoNaranja}`}>
+            <h1 className="my-5 text-white">Login</h1>
             <div className="form-floating mb-3">
                 <input 
                     name="name"
@@ -76,7 +77,7 @@ export const Login =()=>{
 
                 <button
                     disabled={waiting}
-                    className="row w-100 btn btn-primary my-1"
+                    className="row w-100 btn btn-warning my-1"
                     onClick={googleSignIn}
                 >
                     Login con cuenta Google

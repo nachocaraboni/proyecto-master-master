@@ -5,12 +5,14 @@ import { ItemList } from "./ItemList"
 export const ItemListContainer =() =>{
     
         const {datos, loading} = useFetch()
+        const productos = datos.filter((dato)=>!dato.destacado)
+        
         
 
         return(           
             loading 
                 ?<img height='500' width='500' src={gif} alf={gif} />
-                :<ItemList datos={datos} />
+                :<ItemList productos={productos} />
 
     )
 }
