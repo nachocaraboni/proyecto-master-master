@@ -3,7 +3,7 @@ export const MetodoDePago = () => {
     return(
 
         <div className="container-fluid mx-auto mt-5 pt-5 text-white">
-        <h2 >Dejanos tu consulta</h2>
+       {/* <h2 >Dejanos tu consulta</h2>
   
         <form name="formulario" className="my-5 w-75 m-auto">
           <div className="mb-3 row">
@@ -50,7 +50,7 @@ export const MetodoDePago = () => {
           <button className="btn btn-primary my-3 w-30" onClick={handleClick}>
             Enviar
           </button>
-        </form>
+    </form>*/}
       </div>
 
 
