@@ -3,13 +3,13 @@ import { Promociones } from './../Pages/Promociones/Promociones';
 import { Nosotros } from './../Pages/Nosotros/Nosotros';
 import { Contacto } from './../Pages/Contacto';
 import { Perfil } from '../Login/Perfil';
-import { Carrito } from '../Carrito';
+import { Carrito, MetodoDePago } from '../Carrito';
 import { ItemListContainer } from '../Pages/Home/ItemsList';
 import { ItemDetailsContainer } from '../Pages/Home/ItemDetails';
 import { LoginLayout } from '../Layout';
 import { Route, Routes } from 'react-router-dom';
 import { CarrouselContainer } from '../Pages/Inicio/CarrouselContainer';
-import { MetodoDePago } from '../Carrito/MetodoDePago';
+import { DetallesDeLaCompra } from '../Carrito/DetallesDeLaCompra';
 
 
 export const Router = () =>{
@@ -28,7 +28,8 @@ export const Router = () =>{
                 <Route path='/item/:id' element={<ItemDetailsContainer />}/>
                 <Route path='/nosotros' element={<Nosotros />}/>
                 <Route path='/contacto' element={<Contacto />}/>
-                <Route path='/metododepago' element={<MetodoDePago />}/>             
+                <Route path='/detallesdelacompra' element={<DetallesDeLaCompra />}/>
+                <Route path='/metododepago' element={<MetodoDePago />}/>               
         </Routes>
     </LoginLayout>
     )

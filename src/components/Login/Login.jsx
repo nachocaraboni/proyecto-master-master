@@ -77,7 +77,7 @@ export const Login =()=>{
 
                 <button
                     disabled={waiting}
-                    className="row w-100 btn btn-warning my-1"
+                    className="row w-100 btn btn-primary my-1"
                     onClick={googleSignIn}
                 >
                     Login con cuenta Google

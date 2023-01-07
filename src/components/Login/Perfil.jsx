@@ -8,15 +8,17 @@ export const Perfil =()=>{
 
     const {user} = useContext(LoginContext) 
     return(
-            <div className="d-flex flex-column">
-            <h1 className="text-white">Perfil</h1> 
+            <div className="justify-content-start">
+                <div>
+                    <h1 className="text-black mt-3">Perfil</h1> 
 
-                <img src={user.img} alt={user.nombre} className="text-white" />   
+                    <img src={user.img} alt={user.nombre} className="text-black my-5" />
+                </div>   
 
-                 <div className="d-flex align-items-start flex-column mx-0 ">
-                    <h4 className="text-white">Nombre del Usuario:{user.nombre}</h4>
+                 <div className="d-flex flex-column align-items-start px-0 mx-0 mt-2">
+                    <h4 className="text-black">Nombre del Usuario: {user.nombre}</h4>
 
-                    <h4 className="text-white">Mail del Usuario:{user.email}</h4>
+                    <h4 className="text-black mt-4">Mail del Usuario: {user.email}</h4>
                 </div>        
             </div>
         

@@ -40,11 +40,11 @@ export const Carrito =()=>{
             </div>)}
 
             <Link
-                to='/metododepago'
+                to='/detallesdelacompra'
                 key='pagar'
             >
 
-            <button className="shadow fw-bold fs-5 w-100 btn btn-warning"> Pagar </button>
+            <button className="shadow fw-bold fs-5 w-100 btn btn-primary"> Detalles de La Compra </button>
             </Link>
 
         </div>     

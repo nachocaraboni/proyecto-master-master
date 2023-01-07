@@ -9,7 +9,7 @@ export const Carrousel = ({ datosDestacados }) => {
       {datosDestacados.map((item) => (
         <Carousel.Item>
           <img
-            className={` w-100 ${styles.imagenCarrousel}`}
+            className={`w-100 ${styles.imagenCarrousel}`}
             src={item.imagen}
             alt={item.imagen}
           />

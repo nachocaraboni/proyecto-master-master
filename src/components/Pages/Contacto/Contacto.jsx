@@ -62,7 +62,7 @@ export const Contacto = () => {
             />
           </div>
         </div>
-        <button className="btn btn-warning my-3 w-30" onClick={handleClick}>
+        <button className="btn btn-primary my-3 w-30" onClick={handleClick}>
           Enviar
         </button>
       </form>

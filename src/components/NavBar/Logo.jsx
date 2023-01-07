@@ -1,4 +1,3 @@
-import paleta from './../../assets/Img/paleta.png'
 import charly from './../../assets/Img/charly_logo.png'
 
 export const Logo = () => {
@@ -7,7 +6,7 @@ export const Logo = () => {
         <img height='50' className='mx-2'
 
             src={charly}
-            alt={paleta}
+            alt={charly}
             
             />
     )
