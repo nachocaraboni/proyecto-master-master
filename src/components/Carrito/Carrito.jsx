@@ -10,7 +10,7 @@ export const Carrito =()=>{
 
     return(
         <div className="container">
-           <h1 className="mb-4">Carrito:</h1> 
+           <h1 className="mb-4 mt-4">Carrito:</h1> 
 
             { items.map(({id,nombre,marca,precio,imagen,descripcion,cantidad}) =>
             <div 
@@ -44,7 +44,7 @@ export const Carrito =()=>{
                 key='pagar'
             >
 
-            <button className="shadow fw-bold fs-5 w-100 btn btn-primary"> Detalles de La Compra </button>
+            <button className="shadow w-100 btn btn-primary"> Detalles de La Compra </button>
             </Link>
 
         </div>     
